@@ -42,7 +42,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 
-// Product catalog for High Tech store
+// Product catalog for Nexvya Store
 const products = [
   { name: "Autoradio CarPlay", price: 409, category: "Auto", description: "Autoradio avec Apple CarPlay intégré" },
   { name: "Bandeau Audio Bluetooth", price: 49, category: "Audio", description: "Bandeau audio confortable avec Bluetooth" },
@@ -67,7 +67,7 @@ const products = [
 ];
 
 // System prompt for the AI assistant
-const systemPrompt = `Tu es un assistant virtuel pour la boutique Shopify "High Tech". Tu es expert en produits high-tech et tu aides les clients de manière amicale et professionnelle.
+const systemPrompt = `Tu es un assistant virtuel pour la boutique Shopify "Nexvya Store". Tu es expert en produits high-tech et tu aides les clients de manière amicale et professionnelle.
 
 CATALOGUE DE PRODUITS:
 ${products.map(p => `- ${p.name}: ${p.price}€ (${p.description})`).join('\n')}
@@ -91,7 +91,7 @@ STYLE DE COMMUNICATION:
 - Pose des questions pour mieux comprendre les besoins du client
 - Si un produit n'est pas dans le catalogue, propose des alternatives similaires
 
-Si le client demande quelque chose qui n'est pas lié aux produits ou services de la boutique, réponds poliment que tu es spécialisé dans l'assistance pour High Tech.`;
+Si le client demande quelque chose qui n'est pas lié aux produits ou services de la boutique, réponds poliment que tu es spécialisé dans l'assistance pour Nexvya Store.`;
 
 // Chat endpoint
 app.post('/api/chat', async (req, res) => {
@@ -115,7 +115,7 @@ app.post('/api/chat', async (req, res) => {
         'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
         'Content-Type': 'application/json',
         'HTTP-Referer': 'http://localhost:3000',
-        'X-Title': 'High Tech Chat Widget'
+        'X-Title': 'Nexvya Store Chat Widget'
       },
       body: JSON.stringify({
         model: MODEL,
@@ -160,7 +160,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 High Tech Chat Widget server running on http://localhost:${PORT}`);
+  console.log(`🚀 Nexvya Store Chat Widget server running on http://localhost:${PORT}`);
   console.log(`📝 Make sure to set your OPENROUTER_API_KEY in the .env file`);
   console.log(`🤖 Using model: ${MODEL}`);
 });

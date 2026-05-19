@@ -1,11 +1,11 @@
-# 🤖 High Tech - Widget de Chat IA
+# 🤖 Nexvya Store - Widget de Chat IA
 
-Widget de chat intelligent pour la boutique Shopify "High Tech" utilisant Claude via OpenRouter. Le bot connaît tous les produits de la boutique et peut répondre aux questions sur les produits, le SAV et la livraison en français.
+Widget de chat intelligent pour la boutique Shopify "Nexvya Store" utilisant Claude via OpenRouter. Le bot connaît tous les produits de la boutique et peut répondre aux questions sur les produits, le SAV et la livraison en français.
 
 ## 🎯 Fonctionnalités
 
 - **Assistant IA intelligent** : Utilise Claude Sonnet 4.5 (anthropic/claude-sonnet-4-5) via OpenRouter pour des réponses naturelles
-- **Connaissance produits** : Connaît les 20 produits de la boutique High Tech avec prix et descriptions
+- **Connaissance produits** : Connaît les 20 produits de la boutique Nexvya Store avec prix et descriptions
 - **Support client complet** : Répond aux questions sur :
   - Recommandations de produits
   - Caractéristiques et prix
@@ -153,4 +153,4 @@ OpenRouter offre plusieurs avantages :
 
 ---
 
-Créé avec ❤️ pour High Tech
+Créé avec ❤️ pour Nexvya Store

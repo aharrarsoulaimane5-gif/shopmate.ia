@@ -1,7 +1,7 @@
 {
   "name": "shopassist-chat-widget",
   "version": "1.0.0",
-  "description": "AI Chat Widget for High Tech Shopify Store",
+  "description": "AI Chat Widget for Nexvya Store Shopify Store",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

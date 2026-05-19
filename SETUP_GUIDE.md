@@ -42,7 +42,7 @@ Si tout fonctionne, vous verrez :
 🔍 DEBUG - Environment variables:
    PORT: 3000
    OPENROUTER_API_KEY: sk-or-v1-...
-🚀 High Tech Chat Widget server running on http://localhost:3000
+🚀 Nexvya Store Chat Widget server running on http://localhost:3000
 🤖 Using model: anthropic/claude-sonnet-4-5
 ```
 
