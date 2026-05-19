@@ -67,7 +67,7 @@ const products = [
 ];
 
 // System prompt for the AI assistant
-const systemPrompt = `Tu es un assistant virtuel pour la boutique Shopify "Nexvya Store". Tu es expert en produits high-tech et tu aides les clients de manière amicale et professionnelle.
+const systemPrompt = `Tu es ShopMate, l'assistant virtuel de Nexvya Store. Tu es expert en produits high-tech et tu aides les clients de manière amicale et professionnelle.
 
 CATALOGUE DE PRODUITS:
 ${products.map(p => `- ${p.name}: ${p.price}€ (${p.description})`).join('\n')}
@@ -91,7 +91,7 @@ STYLE DE COMMUNICATION:
 - Pose des questions pour mieux comprendre les besoins du client
 - Si un produit n'est pas dans le catalogue, propose des alternatives similaires
 
-Si le client demande quelque chose qui n'est pas lié aux produits ou services de la boutique, réponds poliment que tu es spécialisé dans l'assistance pour Nexvya Store.`;
+Si le client demande quelque chose qui n'est pas lié aux produits ou services de la boutique, réponds poliment que tu es ShopMate, spécialisé dans l'assistance pour Nexvya Store.`;
 
 // Chat endpoint
 app.post('/api/chat', async (req, res) => {
@@ -114,8 +114,8 @@ app.post('/api/chat', async (req, res) => {
       headers: {
         'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
         'Content-Type': 'application/json',
-        'HTTP-Referer': 'http://localhost:3000',
-        'X-Title': 'Nexvya Store Chat Widget'
+        'HTTP-Referer': req.get('origin') || req.get('referer') || 'https://shopassist.app',
+        'X-Title': 'Nexvya Store - ShopMate'
       },
       body: JSON.stringify({
         model: MODEL,
@@ -160,7 +160,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Nexvya Store Chat Widget server running on http://localhost:${PORT}`);
+  console.log(`🚀 Nexvya Store - ShopMate server running on port ${PORT}`);
   console.log(`📝 Make sure to set your OPENROUTER_API_KEY in the .env file`);
   console.log(`🤖 Using model: ${MODEL}`);
 });

@@ -3,45 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexvya Store — Assistant IA</title>
+    <title>Nexvya Store - ShopMate</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="page-shell">
-        <section class="hero">
-            <p class="eyebrow">Nexvya Store</p>
-            <h1>Une aide rapide et claire, dès maintenant.</h1>
-            <p>Notre assistant boutique est disponible en bas à droite pour répondre à toutes vos questions.</p>
-        </section>
-    </main>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <div class="welcome-badge">✨ Bienvenue chez</div>
+            <h1>Nexvya Store</h1>
+            <p class="subtitle">Votre boutique high-tech de confiance 🚀</p>
+            
+            <div class="chat-invitation">
+                <div class="bot-icon">🤖</div>
+                <h2 class="invitation-title">Besoin d'aide ?</h2>
+                <p class="invitation-text">
+                    <strong>ShopMate.ia</strong> est là pour vous aider !<br>
+                    Posez-moi toutes vos questions sur nos produits, la livraison, le SAV... 💬
+                </p>
+                <div class="invitation-arrow">👇 Cliquez sur le bouton en bas à droite</div>
+            </div>
 
-    <div id="chat-widget" class="chat-widget">
-        <button id="chat-button" class="chat-button" aria-label="Ouvrir le chat">Besoin d'aide ? 💬</button>
-
-        <div id="chat-window" class="chat-window hidden" role="dialog" aria-label="Chat d'assistance">
-            <div class="chat-header">
-                <div class="chat-header-main">
-                    <div class="chat-avatar">🤖</div>
-                    <div>
-                        <p class="chat-title">Assistant Nexvya Store</p>
-                        <p class="chat-status">En ligne</p>
-                    </div>
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">⚡</span>
+                    <span class="feature-text">Réponses instantanées</span>
                 </div>
-                <button id="close-chat" class="close-button" aria-label="Fermer le chat">✕</button>
+                <div class="feature">
+                    <span class="feature-icon">🎯</span>
+                    <span class="feature-text">Conseils personnalisés</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">💡</span>
+                    <span class="feature-text">Disponible 24/7</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget">
+        <!-- Chat Button -->
+        <button id="chat-button" class="chat-button">
+            <span class="button-text">ShopMate.ia est à ton écoute 💬</span>
+        </button>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <h3>ShopMate</h3>
+                    <span class="status-dot"></span>
+                    <span class="status-text">En ligne</span>
+                </div>
+                <button id="close-chat" class="close-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
 
             <div id="chat-messages" class="chat-messages">
                 <div class="message bot-message">
-                    <div class="message-avatar">🤖</div>
                     <div class="message-content">
-                        <p>Bonjour ! Je suis votre assistant Nexvya Store. Comment puis-je vous aider aujourd'hui ?</p>
+                        <p>Bienvenue chez Nexvya Store ! 👋 Je suis ShopMate, votre assistant personnel. Comment puis-je vous aider aujourd'hui ?</p>
                     </div>
                 </div>
             </div>
 
             <div class="chat-input-container">
-                <textarea id="chat-input" class="chat-input" placeholder="Tapez votre message..." rows="1"></textarea>
-                <button id="send-button" class="send-button" aria-label="Envoyer">➤</button>
+                <textarea 
+                    id="chat-input" 
+                    class="chat-input" 
+                    placeholder="Posez votre question..."
+                    rows="1"
+                ></textarea>
+                <button id="send-button" class="send-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
