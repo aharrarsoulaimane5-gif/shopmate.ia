@@ -1,93 +1,47 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexvya Store - Assistant IA</title>
+    <title>Nexvya Store — Assistant IA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Demo page content -->
-    <div class="demo-page">
-        <header>
-            <h1>🛍️ Nexvya Store - Boutique Nexvya Store</h1>
-            <p>Bienvenue sur notre boutique en ligne. Besoin d'aide ? Cliquez sur le chat en bas à droite !</p>
-        </header>
-        
-        <main>
-            <section class="products-preview">
-                <h2>Nos Produits Populaires</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <h3>🎧 Écouteurs UYUXIO</h3>
-                        <p class="price">139€</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>⌚ COLMI R09 montre</h3>
-                        <p class="price">279€</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>🔒 Serrure Intelligente MOES</h3>
-                        <p class="price">999€</p>
-                    </div>
-                    <div class="product-card">
-                        <h3>🎤 Microphone Gaming FIFINE</h3>
-                        <p class="price">539€</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+    <main class="page-shell">
+        <section class="hero">
+            <p class="eyebrow">Nexvya Store</p>
+            <h1>Une aide rapide et claire, dès maintenant.</h1>
+            <p>Notre assistant boutique est disponible en bas à droite pour répondre à toutes vos questions.</p>
+        </section>
+    </main>
 
-    <!-- Chat Widget -->
-    <div id="chat-widget">
-        <!-- Chat Button -->
-        <button id="chat-button" class="chat-button" aria-label="Ouvrir le chat">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-            </svg>
-        </button>
+    <div id="chat-widget" class="chat-widget">
+        <button id="chat-button" class="chat-button" aria-label="Ouvrir le chat">Besoin d'aide ? 💬</button>
 
-        <!-- Chat Window -->
-        <div id="chat-window" class="chat-window hidden">
+        <div id="chat-window" class="chat-window hidden" role="dialog" aria-label="Chat d'assistance">
             <div class="chat-header">
-                <div class="chat-header-content">
+                <div class="chat-header-main">
                     <div class="chat-avatar">🤖</div>
-                    <div class="chat-title">
-                        <h3>Assistant Nexvya Store</h3>
-                        <span class="chat-status">En ligne</span>
+                    <div>
+                        <p class="chat-title">Assistant Nexvya Store</p>
+                        <p class="chat-status">En ligne</p>
                     </div>
                 </div>
-                <button id="close-chat" class="close-button" aria-label="Fermer le chat">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
+                <button id="close-chat" class="close-button" aria-label="Fermer le chat">✕</button>
             </div>
 
             <div id="chat-messages" class="chat-messages">
                 <div class="message bot-message">
                     <div class="message-avatar">🤖</div>
                     <div class="message-content">
-                        <p>Bonjour ! 👋 Je suis votre assistant virtuel Nexvya Store. Comment puis-je vous aider aujourd'hui ?</p>
+                        <p>Bonjour ! Je suis votre assistant Nexvya Store. Comment puis-je vous aider aujourd'hui ?</p>
                     </div>
                 </div>
             </div>
 
             <div class="chat-input-container">
-                <textarea 
-                    id="chat-input" 
-                    class="chat-input" 
-                    placeholder="Tapez votre message..."
-                    rows="1"
-                ></textarea>
-                <button id="send-button" class="send-button" aria-label="Envoyer">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="22" y1="2" x2="11" y2="13"></line>
-                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                    </svg>
-                </button>
+                <textarea id="chat-input" class="chat-input" placeholder="Tapez votre message..." rows="1"></textarea>
+                <button id="send-button" class="send-button" aria-label="Envoyer">➤</button>
             </div>
         </div>
     </div>
