@@ -82,7 +82,7 @@ Widget de chat intelligent pour la boutique Shopify "Nexvya Store" utilisant Cla
 
 5. **Ouvrir dans le navigateur**
    ```
-   http://localhost:3000
+   https://shopmateia-production.up.railway.app
    ```
 
 ## 📁 Structure du Projet

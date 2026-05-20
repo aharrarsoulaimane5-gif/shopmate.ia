@@ -42,11 +42,11 @@ Si tout fonctionne, vous verrez :
 🔍 DEBUG - Environment variables:
    PORT: 3000
    OPENROUTER_API_KEY: sk-or-v1-...
-🚀 Nexvya Store Chat Widget server running on http://localhost:3000
+🚀 Nexvya Store Chat Widget server running on port 3000
 🤖 Using model: anthropic/claude-sonnet-4-5
 ```
 
-Puis ouvrez http://localhost:3000 dans votre navigateur !
+Puis ouvrez `https://shopmateia-production.up.railway.app` dans votre navigateur ou utilisez le domaine de production Railway.
 
 ## ❌ Si vous voyez une erreur
 

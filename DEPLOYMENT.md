@@ -31,8 +31,9 @@ git push origin main
 ### Tester en local
 ```bash
 npm start
-# Serveur sur http://localhost:3001
 ```
+
+Puis utilisez le domaine de production : `https://shopmateia-production.up.railway.app`
 
 ## 📝 Checklist avant déploiement
 
