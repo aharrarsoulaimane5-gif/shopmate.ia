@@ -26,8 +26,7 @@ const MODEL = 'anthropic/claude-sonnet-4-5';
 // Debug: Show what was loaded
 console.log('🔍 DEBUG - Environment variables:');
 console.log('   PORT:', process.env.PORT);
-console.log('   OPENROUTER_API_KEY:', OPENROUTER_API_KEY ? `${OPENROUTER_API_KEY.substring(0, 10)}...` : 'NOT SET');
-console.log('   Full key value:', OPENROUTER_API_KEY);
+console.log('   OPENROUTER_API_KEY loaded:', !!OPENROUTER_API_KEY);
 
 // Verify API key is loaded
 if (!OPENROUTER_API_KEY || OPENROUTER_API_KEY === 'your_openrouter_api_key_here') {
